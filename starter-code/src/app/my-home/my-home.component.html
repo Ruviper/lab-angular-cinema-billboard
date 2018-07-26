@@ -1,0 +1,9 @@
+<p>
+  my-home works!
+</p>
+
+<div *ngFor="let movie of access.movieList">
+  <h1>{{movie.room}}</h1>
+  <img src="{{movie.poster}}" alt="">
+  <a [routerLink]="['movie', movie.id]" href="">{{movie.title}}</a>
+</div>
